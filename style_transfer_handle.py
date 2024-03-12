@@ -5,7 +5,6 @@ from style_transfer import process_image
 from utils import *
 
 def handle_process_event(event, context):
-    
     for message in event['messages']:
         task = json.loads(message['details']['message']['body'])
         object_name = task['task_id']

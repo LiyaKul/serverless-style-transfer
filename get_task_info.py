@@ -31,6 +31,3 @@ def handle_api(event, context):
         'headers': {'content-type': 'application/json'},
         'body': body
     }
-
-client = get_storage_client()
-client.download_file('results-bucket', 'aa59dfc5-2f9b-43ac-b4b0-f6b2e3186c9c.jpg', 'kek.jpg')
